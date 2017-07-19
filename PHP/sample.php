@@ -1,5 +1,11 @@
-<?php 
-//PHP SMS API integration code 
+
+This following example of PHP SMS Sample code utilizes a ready-made object related to the HTTP API.
+Once you Signup with Broadnet Tech SMS Sending API , You will recieveYOUR API URL Your API User ID - Sender ID 
+Your API Password  for signing Up with Braodnet  Technologies 
+please visti  wwww.broandet.me or email info@broadnet.me or skype - broadnet-sms ,
+PHP SMS API integration code 
+
+<?php
 //Your application url 
 $ApiUrl ="ApiUrl";
 
