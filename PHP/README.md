@@ -3,51 +3,62 @@ PHP is the abbreviation of Hypertext Preprocessor, a well-known programming scri
 
 BroadNet Technologies furnishes you with a variety of PHP Sample SMS code examples and programming objects, and assist you in connecting to our gateway via the PHP script. Sending your messages via our designed PHP SMS Sample Code is easier than you guess! 
 
-Example of PHP Sample SMS code
+//Example of PHP Sample SMS code
+//This following example of PHP SMS Sample code utilizes a ready-made object related to the HTTP API.
 
-This following example of PHP SMS Sample code utilizes a ready-made object related to the HTTP API.
+    
+#PHP SMS API integration code 
 
-# Sample
-//PHP SMS API integration code 
-//Your application url 
+```
+<?PHP
+
+<!-- language: php -->
+Your application url Provided by Broadnet
 $ApiUrl ="ApiUrl";)
 
-//Your User Id
+<!-- language: php -->
+Your User Id Provided by Broadnet
 $user ="user";
 
-//Your password
+<!-- language: php -->
+Your password Provided by Broadnet
 $pass ="****";
 
-//Multiple mobiles numbers separated by comma
+<!-- language: php -->
+Multiple mobiles numbers separated by comma
 $mno = "9999999";
 
-//Sender ID,While using route4 sender id should be 6 characters long.
+<!-- language: php -->
+Sender ID,While using route4 sender id should be 6 characters long.
 $sid = "102234";
 
-//Your message to send, Add URL encoding here.
+<!-- language: php -->
+Your message to send, Add URL encoding here.
 $text = "Test message";
 
-// Message Type (1,2,3,4) 1- English,2-Unicode,3- Special Character,4-Arabic
+<!-- language: php -->
+Message Type (1,2,3,4) 1- English,2-Unicode,3- Special Character,4-Arabic
 $type = "type";
 
-//Prepare parameter string
-$url = "$ApiUrl?user=$user&pass=$pass&sid=$sid&mno=$mno&text=$text&type=$type";
-
-//prepare connection
-$ch = curl_init($url);
+<!-- language: php -->
+prepare connection
+$ch = curl_init($ApiUrl);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
 curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
 
-//reading response
+<!-- language: php -->
+reading response
 $body = curl_exec($ch);
 
-//finally close connection
+<!-- language: php -->
+finally close connection
 curl_close($ch);
 
-//print response 
+<!-- language: php -->
+print response 
 echo $body;
 
+```
+##The aforesaid PHP Sample SMS Code connects to BroadNet's server and sends a request to the same web server for sending a message. 
 
-The aforesaid PHP Sample SMS Code connects to BroadNet's server and sends a request to the same web server for sending a message. 
-
-If you still have any doubt and/or have any query regarding the implementation of the PHP Sample SMS Code into your Software, feel free to contact us at info@broadnetme.com or if you want to have a demo account to test our server, please send email to info@broadnetme.com
+##If you still have any doubt and/or have any query regarding the implementation of the PHP Sample SMS Code into your Software, feel free to contact us at info@broadnetme.com or if you want to have a demo account to test our server, please send email to info@broadnetme.com
